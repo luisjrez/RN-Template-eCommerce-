@@ -4,6 +4,10 @@
 
 ### :octocat: Open your first pull request for the Hacktoberfest 2021 challenge.
 
+### Figma Design
+
+https://www.figma.com/community/file/1034673430407061199/E-Commerce-App-Kit
+
 ### Run the project
 
 to run the project enter to the `ECommerce` app folder and you run the following commands:
