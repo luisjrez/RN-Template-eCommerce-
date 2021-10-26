@@ -12,20 +12,21 @@ import {
   decrement,
   reset
 } from '../redux/slices/counter.slice'
+import InputElement from '../components/InputElement'
 
 const Counter = () => {
   const dispatch = useDispatch()
   const counter = useSelector(state => state.counter.counter)
-  function onIncrement () {
+  function onIncrement() {
     dispatch(increment())
   }
-  function onDecrement () {
+  function onDecrement() {
     dispatch(decrement())
   }
-  function onIncrementByAmount () {
+  function onIncrementByAmount() {
     dispatch(incrementByAmount(3))
   }
-  function onReset () {
+  function onReset() {
     dispatch(reset())
   }
   return (
@@ -136,6 +137,10 @@ const Counter = () => {
               </Text>
             </TouchableOpacity>
           </View>
+          <InputElement
+            label='Card Number'
+            placeholder='BASIC INPUT'
+          />
         </View>
       </View>
     </SafeAreaView>
