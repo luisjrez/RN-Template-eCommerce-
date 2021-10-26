@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
+import type { Node } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -17,7 +17,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import {
   Colors,
   DebugInstructions,
@@ -31,9 +31,11 @@ import Counter from './src/pages/Counter';
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <Counter />
-    </Provider>
+    <SafeAreaProvider>
+      <Provider store={store}>
+        <Counter />
+      </Provider>
+    </SafeAreaProvider>
   )
 }
 
